@@ -366,7 +366,7 @@ module fsm (
         end else begin
             state <= next_state;
             if (update_carry_flag) begin
-                carry_flag <= carry_flag + alu_cout;
+                carry_flag <=  alu_cout;
             end
             if (update_zero_flag) begin
                 zero_flag <= alu_zero;
